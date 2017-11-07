@@ -43,6 +43,7 @@ class Replicator
 
     # Setup an instance variable for the recipe
     # so that other methods can see what the recipe is
+
     @recipe = recipe
 
     # This transports a glass from the cupboard to inside the replicator.
@@ -64,6 +65,7 @@ class Replicator
     #   glass_inside_replicator
     # And then to see what's inside the glass, use:
     #   glass_inside_replicator.inside.contents
+
     transport_ingredients_to_glass
 
     # This methods mixes the ingredients in the glass around.
@@ -110,6 +112,7 @@ class Replicator
 
     # Go through recipe and transport each ingredient
     # from pantry to glass, one by one.
+    
     @recipe.ingredients.each do |ingredient_name|
       @enterprise.transporter.energize(
         @enterprise.pantry.find_ingredient(ingredient_name),

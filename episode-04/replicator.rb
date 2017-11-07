@@ -49,6 +49,7 @@ class Replicator
     # If this method is successful, it will return the glass that was
     # transported and @inside_replicator will contain the glass
     # in its contents.
+    
     retrieve_glass
 
     # Setup an instance variable to access the glass.

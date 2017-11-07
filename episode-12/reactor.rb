@@ -17,7 +17,7 @@ class Reactor
     @enterprise         = enterprise
     @core               = Location.new
     @on                 = false
-    @dilithium_crystals = 0
+    @dilithium_crystals = 20000
     stock
     turn_on
   end

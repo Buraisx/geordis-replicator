@@ -49,6 +49,7 @@ class Replicator
     # If this method is successful, it will return the glass that was
     # transported and @inside_replicator will contain the glass
     # in its contents.
+    
     retrieve_glass
 
     # Setup an instance variable to access the glass.
@@ -64,6 +65,7 @@ class Replicator
     #   glass_inside_replicator
     # And then to see what's inside the glass, use:
     #   glass_inside_replicator.inside.contents
+
     transport_ingredients_to_glass
 
     # This methods mixes the ingredients in the glass around.

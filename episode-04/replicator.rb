@@ -112,11 +112,24 @@ class Replicator
     # from pantry to glass, one by one.
     @recipe.ingredients.each do |ingredient_name|
       @enterprise.transporter.energize(
+
         # Geordi is in a jokey mood and
         # reprograms the replicator
-        @enterprise.pantry.find_ingredient('banana'),
+        @enterprise.pantry.find_ingredient('tea'),
+
         @enterprise.pantry.shelf,
         glass_inside_replicator.inside
+
+      )
+            @enterprise.transporter.energize(
+
+        # Geordi is in a jokey mood and
+        # reprograms the replicator
+        @enterprise.pantry.find_ingredient('sugar'),
+
+        @enterprise.pantry.shelf,
+        glass_inside_replicator.inside
+
       )
     end
   end

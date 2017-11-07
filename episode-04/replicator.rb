@@ -49,7 +49,7 @@ class Replicator
     # If this method is successful, it will return the glass that was
     # transported and @inside_replicator will contain the glass
     # in its contents.
-    
+
     retrieve_glass
 
     # Setup an instance variable to access the glass.
@@ -185,7 +185,6 @@ class Replicator
     # Transport glass from reactor back to inside the replicator.
     # If successful, @enterprise.reactor.core will now be empty
     # and @inside_replicator will once again contain the glass.
-        binding.pry
 
     transport_glass_from_reactor
 

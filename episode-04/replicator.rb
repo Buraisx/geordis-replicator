@@ -53,7 +53,6 @@ class Replicator
 
     # Setup an instance variable to access the glass.
     @glass = @inside_replicator.contents.first
-
     # Transport each ingredient the recipe calls for
     # from the pantry to the glass.
     # If this method is successful, it should return
@@ -76,6 +75,7 @@ class Replicator
     # This method adjusts the temperature of the contents in the glass.
     # If you read back `glass.temperature`, then it should be set
     # to the temperature the recipe calls for if this method executed properly.
+
     adjust_temperature
 
     # This method moves the glass from @inside_replicator to @plate
@@ -184,6 +184,8 @@ class Replicator
     # Transport glass from reactor back to inside the replicator.
     # If successful, @enterprise.reactor.core will now be empty
     # and @inside_replicator will once again contain the glass.
+        binding.pry
+
     transport_glass_from_reactor
 
   end
